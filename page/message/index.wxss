@@ -1,0 +1,29 @@
+.scroll-view-item {
+  height: 300rpx;
+}
+.scroll-view_H{
+  white-space: nowrap;
+}
+.scroll-view-item_H{
+  display: inline-block;
+  width: 100%;
+  height: 300rpx;
+}
+
+.demo-text-1 {
+  background-color: #1aad19;
+  color: #fff;
+  font-size: 36rpx;
+}
+
+.demo-text-2 {
+  background-color: #2782d7;
+  color: #fff;
+  font-size: 36rpx;
+}
+
+.demo-text-3 {
+  background-color: #f1f1f1;
+  color: #353535;
+  font-size: 36rpx;
+}

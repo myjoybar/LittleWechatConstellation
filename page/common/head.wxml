@@ -1,0 +1,7 @@
+<template name="head">
+  <view class='flex-center '>
+    <image class="icon_96" src="/image/demo/icon_10.png"></image>
+      <view class="page-head-title">{{title}}</view>
+     <view class="page-head-line"></view>
+  </view>
+</template>

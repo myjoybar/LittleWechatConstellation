@@ -1,3 +1,23 @@
-<view class="">
-   <text class="">水瓶座 小报</text> 
+<import src="/page/common/head.wxml" />
+<import src="/page/common/foot.wxml" />
+<view class="flex-vertical ">
+
+  <template is="head" data="{{title: 'scroll-view'}}" />
+  <text class="">水瓶座 小报</text>
+  <view>
+
+    <view class="page-section-spacing">
+      <scroll-view scroll-y="true" style="height: 400rpx;">
+        <view id="demo1" class="scroll-view-item ">
+         <text class='flex-content-end '>02/10</text>
+
+        </view>
+        <view id="demo2" class="scroll-view-item demo-text-2"></view>
+        <view id="demo3" class="scroll-view-item demo-text-3"></view>
+      </scroll-view>
+    </view>
+
+
+  </view>
+  <template is="foot" />
 </view>
