@@ -1,5 +1,6 @@
 <import src="/page/common/head.wxml" />
 <import src="/page/common/foot.wxml" />
+<import src="/page/message/broadcastitem.wxml" />
 <view class="flex-vertical ">
   <view class='divider_horizontal_line'></view>
   <!-- <template is="head" data="{{title: 'scroll-view'}}" /> -->
@@ -9,29 +10,20 @@
     <view class="page-section-spacing">
       <scroll-view scroll-y="true">
         <view id="demo1" class="scroll-view-item ">
-          <view class=' margin-20  padding-vertical-20 shape_rectangle'>
-            <view class='padding-horizotal-20'>
-              <view class='flex-horizontal flex-content-space-between '>
-                <text class=''>02/10</text>
-                <text class=''>分享</text>
-              </view>
-            </view>
+          <!-- <template is="broadcastitem" data="{{publishTimestamp: '02/10',startValidTimestamp: '2018.02.10',endValidTimestamp: '02.10',title: 'scroll-view',broadcastMessage:'有人可能觉得你在做白日梦，脑袋云里雾里。你现在的某个梦想也许是白日梦吧，但并不代表你不能实现它。制定切实的计划，白日梦也能成真。今天就开始踏出第一步'}}"/>   -->
 
-            <view class='divider_horizontal_line'></view>
-            <view class='padding-20'>
-              <text class=''>有人可能觉得你在做白日梦，脑袋云里雾里。你现在的某个梦想也许是白日梦吧，但并不代表你不能实现它。制定切实的计划，白日梦也能成真。今天就开始踏出第一步</text>
-            </view>
-
-          </view>
-
+          <block wx:for="{{listBroadcast}}" wx:for-item="itemBroadcast">
+            <template is="broadcastitem" data="{{itemBroadcast}}" />
+          </block>
         </view>
         <text class='flex-horizontal-center padding-20'>往事已随风,勿念</text>
-  <button bindtap="makeRequest" type="primary" bindtap="request">request</button> 
-    <!-- <view id="demo2" class="scroll-view-item demo-text-2"></view>
+        <button bindtap="makeRequest" type="primary" bindtap="request">request</button>
+        <!-- <view id="demo2" class="scroll-view-item demo-text-2"></view>
         <view id="demo3" class="scroll-view-item demo-text-3"></view> -->
-    </scroll-view>
-  </view>
+      </scroll-view>
+    </view>
 
-</view>
-<!-- <template is="foot" /> -->
+  </view>
+  <!-- <template is="foot" /> -->
+
 </view>

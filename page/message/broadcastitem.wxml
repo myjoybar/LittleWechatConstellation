@@ -1,0 +1,15 @@
+
+<template name="broadcastitem">
+  <view class=' margin-20  padding-vertical-20 shape_rectangle'>
+    <view class='padding-horizotal-20'>
+      <view class='flex-horizontal flex-content-space-between '>
+        <text class=''>{{itemBroadcast.displayPublishTimestamp}}</text>
+        <text class=''>分享</text>
+      </view>
+    </view>
+    <view class='divider_horizontal_line'></view>
+    <view class='padding-20'>
+      <text class=''>{{itemBroadcast.displayStartValidTimestamp}}-{{itemBroadcast.displayEndValidTimestamp}} {{itemBroadcast.broadcastMessage}}</text>
+    </view>
+  </view>
+</template>
