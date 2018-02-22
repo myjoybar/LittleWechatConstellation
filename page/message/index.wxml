@@ -25,7 +25,7 @@
         <view hidden="{{isHideBottom}}">
           <text class='flex-horizontal-center padding-20'>往事已随风,勿念</text>
         </view>
-        <button bindtap="makeRequest" type="primary" bindtap="request">request</button>
+        <button bindtap="makeRequest" type="primary" bindtap="startShare">request</button>
       </scroll-view>
     </view>
 

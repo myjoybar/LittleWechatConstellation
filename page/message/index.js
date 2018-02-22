@@ -19,6 +19,11 @@ Page({
     var that = this;
     getBroadcastList(that, CONSTELLATION_TYPE, PAGE_NUMBER, PAGE_SIZE);
   },
+  startShare: function (e) {
+    console.log('strat startShare')
+    var self = this
+
+  },
 
   //下拉刷新
   onPullDownRefresh: function () {
@@ -122,7 +127,10 @@ var getBroadcastList = function (that, constellationType, pageNumber, pageSize) 
         }
         if (listData.length >= MAX_PAGE_COUNT) {
           setBottomTipHideStatus(self, false);
+        }else{
+          setBottomTipHideStatus(self, true);
         }
+
         that.setData({
           listBroadcast: listData
         });
@@ -174,5 +182,7 @@ var mergeListdata = function (listBroadcast, listdata) {
   }
   return listBroadcast;
 }
+
+
 
 

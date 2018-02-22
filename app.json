@@ -5,7 +5,7 @@
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
+    "navigationBarBackgroundColor": "#999999",
     "navigationBarTitleText": "WeChat",
     "navigationBarTextStyle": "black"
   
@@ -15,7 +15,7 @@
     "color": "#7A7E83",
     "selectedColor": "#3cc51f",
     "borderStyle": "black",
-    "backgroundColor": "#ffffff",
+    "backgroundColor": "#336666",
     "list": [
       {
         "pagePath": "page/message/index",
