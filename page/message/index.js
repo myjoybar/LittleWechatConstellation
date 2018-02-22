@@ -24,6 +24,25 @@ Page({
     var self = this
 
   },
+  onShareAppMessage: function (res) {
+    if (res.from === 'button') {
+      // 来自页面内转发按钮
+      console.log(res.target)
+    }
+    return {
+      title: '自定义转发标题',
+      desc: '最具人气的小程序开发联盟!',
+      path: '/page/user?id=123',
+      success: function (res) {
+        // 转发成功
+      },
+      fail: function (res) {
+        // 转发失败
+      }
+    }
+  },
+
+
 
   //下拉刷新
   onPullDownRefresh: function () {

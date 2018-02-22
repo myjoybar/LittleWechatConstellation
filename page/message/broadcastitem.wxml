@@ -3,8 +3,8 @@
   <view class=' margin-20  padding-vertical-20 shape_rectangle'>
     <view class='padding-horizotal-20'>
       <view class='flex-horizontal flex-content-space-between '>
-        <text class=''>{{itemBroadcast.displayPublishTimestamp}}</text>
-        <text class='button-round '  bindtap="startShare">分享</text>
+        <text class='padding-top-10'>{{itemBroadcast.displayPublishTimestamp}}</text>
+        <text class='button-round margin-bottom-15'  bindtap="startShare">分享</text>
       </view>
     </view>
     <view class='divider_horizontal_line'></view>
