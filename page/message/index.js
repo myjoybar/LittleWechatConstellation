@@ -8,6 +8,7 @@ var PAGE_NUMBER = 0;
 var PAGE_SIZE = 3;
 var MAX_PAGE_COUNT = 10
 var CONSTELLATION_TYPE = 1;
+
 Page({
   data: {
     listBroadcast: [],
@@ -111,6 +112,7 @@ var getBroadcastList = function (that, constellationType, pageNumber, pageSize) 
   wx.request({
     url: getListUrl,
     header: { 'Content-Type': 'application/json' },
+    method: 'GET', 
     data: {
       // noncestr: Date.now(),
       pageNumber: pageNumber,
